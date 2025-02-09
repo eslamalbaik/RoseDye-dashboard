@@ -16,6 +16,7 @@ import DefaultLayout from './layout/DefaultLayout';
 import AddClients from './pages/Form/AddClients';
 import AddInvoices from './pages/Form/AddInvoices';
 import OTPForm from './pages/Form/OTPForm';
+import TableTwo from './components/Tables/TableTwo';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -94,6 +95,15 @@ function App() {
             <>
               <PageTitle title="الجداول | لوحة التحكم مصبغة الورد" />
               <Tables />
+            </>
+          }
+        />
+               <Route
+          path="/tables/subscribers"
+          element={
+            <>
+              <PageTitle title="اضافة عملاء | لوحة التحكم مصبغة الورد"  />
+              <TableTwo />
             </>
           }
         />

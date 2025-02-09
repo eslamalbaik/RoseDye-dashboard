@@ -49,6 +49,9 @@ const TableTwo = () => {
         <div className="col-span-1 flex items-center">
           <p className="font-medium">المجموع</p>
         </div>
+        <div className="col-span-1 flex items-center">
+          <p className="font-medium">إرسال تنبيهات</p>
+        </div>
       </div>
 
       {productData.map((product, key) => (
@@ -75,6 +78,12 @@ const TableTwo = () => {
           </div>
           <div className="col-span-1 flex items-center">
             <p className="text-sm text-meta-3"> {product.profit} KWD</p>
+          </div>
+          <div className="col-span-1 flex items-center">
+            <button className="text-sm bg-meta-3 text-white py-2 px-6 rounded-lg flex flex-row-reverse gap-4"> 
+              <p>تنبيه</p> 
+            <img src="/whatsapp-svgrepo-com.svg" alt="whatsapp" className='w-6 h-6' />
+            </button>
           </div>
         </div>
       ))}
